@@ -15,3 +15,6 @@ insert into employee_payroll (Name, Salary, StartDate) values
 ('Mukesh', 40000.00, '2021-03-05');
 
 Select * from employee_payroll
+
+select salary from employee_payroll where Name = 'Bharath';
+select * from employee_payroll where StartDate between cast ('2021-06-09' as date) and GETDATE();
