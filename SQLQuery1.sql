@@ -18,3 +18,13 @@ Select * from employee_payroll
 
 select salary from employee_payroll where Name = 'Bharath';
 select * from employee_payroll where StartDate between cast ('2021-06-09' as date) and GETDATE();
+
+Alter Table employee_payroll
+Add Gender varchar(1)
+
+Update employee_payroll 
+set Gender ='M' where Name='Bharath' or Name='Raman' or Name='Mukesh'
+Update employee_payroll 
+set Gender='F' where name='Susmitha'
+
+Select * from employee_payroll
