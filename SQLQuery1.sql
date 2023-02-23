@@ -66,3 +66,11 @@ Update employee_payroll Set Department='Accounts' Where Name='Raman'
 Update employee_payroll Set Department='Operations' Where Name='Mukesh'
 
 Select * from employee_payroll
+
+Exec Sp_Rename 'employee_payroll.Salary', 'Basic_pay', 'Column'
+
+alter table employee_payroll add 
+Deductions float not null default 0.00,
+Taxable_Pay float not null default 0.00, 
+Income_Tax float not null default 0.00,
+Net_Pay float not null default 0.00;
