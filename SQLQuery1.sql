@@ -74,3 +74,9 @@ Deductions float not null default 0.00,
 Taxable_Pay float not null default 0.00, 
 Income_Tax float not null default 0.00,
 Net_Pay float not null default 0.00;
+
+insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Department, Deductions, Taxable_Pay, Income_Tax, Net_Pay) values ('Terisa', '50000', '2021-5-26', 'F', '6897515482', 'Sales', '0', '0', '0', '0')
+
+insert into employee_payroll (Name, Basic_pay, Startdate, Gender, Phone, Department, Deductions, Taxable_Pay, Income_Tax, Net_Pay) values ('Terisa', '60000', '2021-6-21', 'F', '9865874896', 'Marketting', '0', '0', '0', '0')
+
+Select * from employee_payroll
