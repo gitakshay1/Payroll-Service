@@ -215,3 +215,19 @@ Join Employee
 on Employee.EmpId=Payroll.EmpId 
 Where Gender='F' 
 Group by Employee.Gender
+
+Select * 
+From Employee e, Department d, Payroll p
+Where e.EmpId=p.EmpId and e.DeptId=d.DeptId
+
+Select Basic_pay
+From Payroll 
+Join Employee 
+on Employee.EmpId=Payroll.EmpId 
+Where Name='Susmitha'
+
+Select Basic_pay
+From Payroll 
+Join Employee 
+on Employee.EmpId=Payroll.EmpId 
+Where StartDate Between '2021-5-25' And '2021-8-30'
